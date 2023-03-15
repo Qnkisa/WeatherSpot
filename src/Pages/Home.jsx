@@ -13,7 +13,7 @@ export default function Home() {
       return;
     }
     const apiKey = "cb698aae9ad4412bb4755635231503";
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
